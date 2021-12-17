@@ -1,0 +1,39 @@
+<div class="containerLis">
+    <br>
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1>Video Club - CoderHouse</h1>    
+        </div>    
+    </div>    
+    <br>
+    <div class="row" id="botones">            
+        <div class="col-md-4  col-sm-12" *ngFor="let pel of peliculas">
+            <button type="button"  id="suboton" class="suboton1"  onClick="listar(1);">
+                <img src="{{pel.url}}" class="img-fluid" alt="Responsive image">
+                <h2>{{ pel.Nombre }}</h2> 
+            </button>   
+        </div>       
+        
+    </div>
+</div>
+<br>
+<hr>
+<div class="containerLis">
+    <div class="row text-center">        
+        <div class="col-md-6">
+            <h2>Detalle</h2>    
+        </div>  
+        <div class="col-md-6" >
+            <h2>Carrito</h2> 
+            <div id="Carrito">
+                <ul class="list-group" *ngFor="let pel of peliculas">
+                    <div class="col-md-6"> <li class="list-group-item">{{pel.Nombre}}</li></div>
+                    <div class="col-md-1"><button type="button" class="btn btn-danger">Quitar</button></div>
+                   
+                    
+                </ul>
+            </div>
+               
+        </div>    
+    </div>     
+</div>

@@ -6,11 +6,16 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './Componentes/login/login.component';
 import { RegistroComponent } from './Componentes/registro/registro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ListadoComponent } from './Componentes/listado/listado.component';
+import { InfoComponent } from './Componentes/info/info.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,   
+    ListadoComponent,
+    InfoComponent   
   ],
   imports: [
     BrowserModule,

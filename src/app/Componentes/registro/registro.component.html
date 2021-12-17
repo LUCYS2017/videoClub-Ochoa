@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1>Video Club CoderHouse</h1>    
+        </div>    
+    </div>
+    <div class="row text-center login-page">
+        <div class="col-md-12 col-sm-6 login-form">
+            <br>
+            <h2>Registro Usuario</h2>
+            <br>
+            <div class="row" id="campo">
+                <label for="user" >Uruario:</label>
+                <input type="text" class="form-control" formControlName="user" >
+            </div>
+            <div class="row" id="campo">
+                <label for="pass">Pasword:</label>
+                <input  type="password" class="form-control"  formControlName="pass">
+            </div>
+            <div class="row" id="campo">
+                <label for="pass">Repita Pasword:</label>
+                <input  type="password" class="form-control"  >
+            </div>
+            <div class="row" id="campo">
+                <p>{{ respuesta.value }}</p>
+            </div>
+            <div class="row" id="campo">
+                <button   id="boton">Registrar</button>
+            </div>
+             
+        </div>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -7,7 +7,8 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 
-export class LoginComponent {
+export class LoginComponent implements OnInit{
+  
 
   user = new FormControl('');
   pass = new FormControl('');
@@ -16,5 +17,11 @@ export class LoginComponent {
   Entrar(){
     this.respuesta.setValue('Credenciales Correctas');
   }
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   
 }
