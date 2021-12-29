@@ -1,0 +1,22 @@
+<button type="button"   id="botonCar" >    
+    <img src="assets/img/car.png" class="img-fluid" id="car" alt="Responsive image"> <span id="can">{{cantidad}}</span>    
+</button>
+<div class="row" id="compras">
+    <div class="col-lg-12">
+        <h3>Carrito de Compras</h3>
+        <p>Estas son las películas que has añadido al carrito</p>    
+        <table>
+            <thead>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let com of Compras">
+                    <td>{{com.nombre}}</td>
+                    <td>{{com.precio}}</td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+</div>
+ 

@@ -1,49 +1,141 @@
-.container{
-    background-color: #F2F3F4;
-    width: 70%;
-    margin-left: 15%;
-    margin-top:30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 15px;
+.titulo{  
+    margin:0;
+    padding: 0; 
+    margin-left: 30px; 
+    width: 50%;      
 }
-#containerLis{
-    background-color: #F2F3F4;
-    width: 80%;
-    margin-left: 10%;
+.container{
+    background-color: #eaeaea;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#containerLis{    
+    width: 90%;
+    margin-left: 5%;
     margin-top:50px;
     padding-top: 50px;
     padding-bottom: 30px;
-    border-radius: 15px;
+    border-radius: 15px;   
 }
 
 h1{
-    color:#1666b6;
-    font-weight: 300;
+    color:#004122;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 36px;
 }
 
-#campo{
+h2{   
+    text-align: left; 
+    font-size: 32px;  
+}
+h4{
     font-size: 20px;
-    width: 50%;
-    margin-left: 25%;
+    font-weight: 100;
+}
+h3{
+    color:#2b2929;
+    font-weight: 400;
+}
+h5{   
+    font-size: 22px;
+}
+
+h6{   
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
+}
+#salir{
+    text-align: right;
+    margin-top: 20px;
+    padding-right: 30px;    
+    font-size: 20px;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+
+#salir a:hover{
+    color: #000;
+    font-weight: 400;
+}
+#car{
+    text-align: right; 
+    width: 30px;    
+}
+#botonCar:hover{    
+    background-color:#eaeaea;  
+    border-radius: 5px;
+}
+#botonCar{
+    border:0 solid transparent;
+    background:transparent;
+}
+#can{
+    background-color:#eaeaea; 
+    margin-left: 5px;  
+    border-radius: 50%;  
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#campo{    
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    padding-top: 15px;
+}
+#msj{
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    padding-top: 15px;
+    color:red; 
+    font-size: 20px;    
+}
+#carrito{
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+#compras{
+    text-align: center;
 }
 
 #boton{
-    background-color: #1666b6;
+    background-color: #004122;
     color: #fff;
-    border-color: #1666b6;
+    border-color: #004122;
+    padding-top:10px;
+    padding-bottom: 10px;
 }
 
-#boton:hover{
-    opacity: 0.7;
+#boton{
+    opacity: 0.8;
 }
+
+#boton:disabled{
+    background-color: #333333;
+    color: #5a5959;
+    ;
+    border-color: #333333;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+
+
 
 #registro{
-    color:#1666b6;
+    color:#004122;
 }
 
 #registro:hover{
-    opacity: 0.7;
+    color:#fff;
 }
 #suboton{
     background-color: #EAEAEA;
@@ -65,7 +157,7 @@ h1{
  }
  #botones{
     text-align: center;
-    width: 90%;
+    width: 60%;
     margin-left: 5%; 
 }
 #Carrito{
@@ -73,3 +165,52 @@ h1{
     margin-left: 5%;
     background-color: #eee;
 }
+
+#login-form{
+    background-color: #181818;
+    color:#fff;
+    border-radius: 5px;
+    border: 1px solid #181818;
+    padding-top:40px;
+    padding-bottom: 40px;
+    margin-top: 30px;  
+    margin-left: 30px;  
+    margin-bottom: 30px;
+}
+.form-control{
+    background-color: #757474;
+    color:#fff;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 28px;    
+}
+
+#botonx{
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+#botonInt{
+    background-color: #004122;   
+    padding: 10px;   
+    margin-top: 10px;  
+    text-align: center;
+    color: #fff;
+}
+
+#botonInt:hover{
+    background-color: #000;      
+}
+
+#botonInt h3{    
+    color: #fff;
+}
+
+

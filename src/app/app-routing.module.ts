@@ -6,7 +6,6 @@ import { ListadoComponent } from './Componentes/listado/listado.component';
 
 const routes: Routes = [
   { path:'registroUsuario', component: RegistroComponent },
-  { path:'login', component: LoginComponent },
   { path: '', component: LoginComponent },
   { path:'listado', component: ListadoComponent}
 ];

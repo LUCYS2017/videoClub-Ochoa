@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './Componentes/login/login.component';
 import { RegistroComponent } from './Componentes/registro/registro.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListadoComponent } from './Componentes/listado/listado.component';
 import { InfoComponent } from './Componentes/info/info.component';
+import { CarritoComponent } from './Componentes/carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -15,13 +16,14 @@ import { InfoComponent } from './Componentes/info/info.component';
     LoginComponent,
     RegistroComponent,   
     ListadoComponent,
-    InfoComponent   
+    InfoComponent,
+    CarritoComponent   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -10,17 +11,18 @@ import { FormControl } from '@angular/forms';
 export class LoginComponent implements OnInit{
   
 
-  user = new FormControl('');
-  pass = new FormControl('');
-  respuesta = new FormControl('');
-
-  Entrar(){
-    this.respuesta.setValue('Credenciales Correctas');
-  }
-
+  emailCtrl = new FormControl('', [Validators.required,  Validators.email]);
+  passCtrl = new FormControl('', [Validators.required, Validators.minLength(8)]);
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getEmail(event: Event){
+    event.preventDefault();   
+   console.log(this.emailCtrl.value); 
+   console.log(this.passCtrl.value);
   }
 
   

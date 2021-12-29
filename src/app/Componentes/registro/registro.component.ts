@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { Validations } from '../../utils/validations';
 
 
 @Component({
@@ -10,14 +11,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class RegistroComponent implements OnInit {
 
-  user = new FormControl('');
-  pass = new FormControl('');
-  respuesta = new FormControl('');
-
-  Registrar(){
-    this.respuesta.setValue('Credenciales Correctas');
-  }
+  emailCtrl = new FormControl('', [Validators.required,  Validators.email]);
+  passCtrl = new FormControl('', [Validators.required, Validators.minLength(8)]);
+  passConfirmCtrl = new FormControl('', [Validators.required, Validators.minLength(8)]);
   
+ 
+
   constructor() { }
 
   ngOnInit(): void {
